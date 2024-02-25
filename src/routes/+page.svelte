@@ -1,33 +1,12 @@
 <script>
 	let tabs = [
-		{ name: 'About Me', link: '#aboutme' },
+		
 		{ name: 'Projects', link: '#projects' },
 		{ name: 'Blog', link: '#blog' },
 		{ name: 'Contact Me', link: '#Contactme' }
 	];
 
-    let projects = [
-        { 
-            title: "Project Title 1",
-            image: "project1.jpg",
-            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        { 
-            title: "Project Title 2",
-            image: "project2.jpg",
-            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        { 
-            title: "Project Title 3",
-            image: "project3.jpg",
-            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        { 
-            title: "Project Title 4",
-            image: "project4.jpg",
-            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        }
-    ];
+
 
 </script>
 
@@ -66,7 +45,7 @@
 </header>
 
 <main class="flex flex-col flex-1 p-4">
-	<section id="aboutme" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
+	<section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
 		<div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
 			<h2 class="font-semibold text-2xl sm:text-3xl md:text-4xl">
 				Hi! I'm <span class="text-green-500">Ozan</span> Turan <br />Front
@@ -92,7 +71,7 @@
 		</h3>
 	</div>
 
-	<!-- İlgili sınıflara hover efektlerini ekleyelim -->
+
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 		<div class="bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
 			<img src="project1.jpg" alt="Project 1" class="w-full h-auto rounded-lg mb-4" />
@@ -137,4 +116,16 @@
 		</div>
 	</div>
 </section>
+
+<footer class="py-20 sm:py-32 bg-black border-t border-solid border-green-800 flex flex-col gap-4 sm:gap-8 justify-center items-center">
+    <p class="px-4 py-2 bg-white text-slate-800 font-medium">Connect With me</p>
+    <div class="flex flex-col gap-4 items-center justify-center">
+        <p><b class="pr-2">E-mail</b>ozann.trn@gmail.com</p>
+        <p><b class="pr-2">GitHub</b><a class="text-green-500" target="_blank" href="https://github.com/ozannturan">ozannturan</a>
+        <p><b class="pr-2">X</b><a class="text-green-500" target="_blank" href="https://twitter.com/ozann_turan">ozann_turan</a>
+        <p><b class="pr-2">LinkedIn</b><a class="text-green-500" target="_blank" href="https://www.linkedin.com/in/ozan-turan-7a6720200/">Ozan Turan</a>     
+</footer>
+
+
+
 
