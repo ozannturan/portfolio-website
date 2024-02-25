@@ -5,6 +5,30 @@
 		{ name: 'Blog', link: '#blog' },
 		{ name: 'Contact Me', link: '#Contactme' }
 	];
+
+    let projects = [
+        { 
+            title: "Project Title 1",
+            image: "project1.jpg",
+            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        { 
+            title: "Project Title 2",
+            image: "project2.jpg",
+            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        { 
+            title: "Project Title 3",
+            image: "project3.jpg",
+            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        { 
+            title: "Project Title 4",
+            image: "project4.jpg",
+            description: "Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ];
+
 </script>
 
 <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm">
@@ -54,19 +78,63 @@
 				>
 			</p>
 		</div>
-		<div class="relative shadow-2xl grid place-items-center justify-center ">
+		<div class="relative shadow-2xl grid place-items-center justify-center">
 			<img src={'src/routes/images/ozan.jpeg'} alt="ozan" class="object-cover z-[2] max-h-[40vh]" />
 		</div>
 	</section>
 </main>
 
 <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
-    <div class="flex flex-col gap-2 text-center">
-        <h6 class="text-xl sm:text-xl md:text-2xl">A few of my creative product.</h6>
-        <h3 class="text-3xl sm:text-4xl md:text-2xl text-blue-500">
-            You can review my projects and contact me.
-        </h3>
-    </div>
-    <footer></footer>
-    <slot/>
+	<div class="flex flex-col gap-2 text-center">
+		<h6 class="text-xl sm:text-xl md:text-2xl">A few of my creative product.</h6>
+		<h3 class="text-3xl sm:text-4xl md:text-2xl text-blue-500">
+			You can review my projects and contact me.
+		</h3>
+	</div>
+
+	<!-- İlgili sınıflara hover efektlerini ekleyelim -->
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+		<div class="bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
+			<img src="project1.jpg" alt="Project 1" class="w-full h-auto rounded-lg mb-4" />
+			<h4 class="text-xl font-semibold mb-2">Project Title</h4>
+			<p class="text-gray-600">
+				Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<a href="#" class="text-blue-500 mt-4 inline-block">View Project</a>
+		</div>
+	</div>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+		<div class="bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
+			<img src="project2.jpg" alt="Project 2" class="w-full h-auto rounded-lg mb-4" />
+			<h4 class="text-xl font-semibold mb-2">Project Title</h4>
+			<p class="text-gray-600">
+				Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<a href="#" class="text-blue-500 mt-4 inline-block">View Project</a>
+		</div>
+	</div>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+		<div class="bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
+			<img src="project3.jpg" alt="Project 3" class="w-full h-auto rounded-lg mb-4" />
+			<h4 class="text-xl font-semibold mb-2">Project Title</h4>
+			<p class="text-gray-600">
+				Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<a href="#" class="text-blue-500 mt-4 inline-block">View Project</a>
+		</div>
+	</div>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+		<div class="bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
+			<img src="project4.jpg" alt="Project 4" class="w-full h-auto rounded-lg mb-4" />
+			<h4 class="text-xl font-semibold mb-2">Project Title</h4>
+			<p class="text-gray-600">
+				Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<a href="#" class="text-blue-500 mt-4 inline-block">View Project</a>
+		</div>
+	</div>
 </section>
+
