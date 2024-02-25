@@ -1,7 +1,6 @@
 <script>
 	let tabs = [
 		{ name: 'Projects', link: '#projects' },
-		{ name: 'Blog', link: '#blog' },
 		{ name: 'Contact Me', link: '#Contactme' }
 	];
 </script>

@@ -1,7 +1,7 @@
 <script>
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
-  import Blog from "../components/Blog.svelte";
+
   import "../app.css";
 </script>
 
@@ -14,6 +14,5 @@
     </div>
     <Header/>
     <slot />
-    <Blog />
     <Footer />
 </div>
